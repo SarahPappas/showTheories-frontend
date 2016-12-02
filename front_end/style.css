@@ -1,0 +1,150 @@
+@font-face {
+	font-family: OstrichSansLight;
+	src: url(/fonts/ostrich-sans-light.woff) format('woff');
+}
+
+body {
+	width: 100%;
+	height: 700px;
+	color: white;
+	font-family: OstrichSansLight, arial;
+	font-size: 24px;
+	margin: 0;
+	overflow: hidden;
+}
+
+.title {
+	padding-top: .25em;
+	font-family: OstrichSansLight, arial;
+	font-size: 200px;
+	text-align: center;
+}
+
+.background {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 1);
+	background-size: cover;
+}
+
+.quote {
+	text-align: center;
+	font-style: italic;
+	font-size: 100px;
+	padding: .4em 1em;
+}
+
+.quote-author {
+	font-size: 18px;
+	font-style: none;
+}
+
+.button-main {
+	font-size: 60px;
+	border: dotted white 2px;
+	width: 3em;
+	letter-spacing: .15em;
+	padding: .15em;
+	padding-top: .25em;
+	padding-left: .20em;
+	margin: 0 auto;
+	text-align: center;
+	animation: pulse 10s infinite;
+	cursor: pointer;
+}
+
+@keyframes pulse {
+  0% {
+    border-color: #001F3F;
+  }
+  50% {
+    border-color: #FF4136;
+  }
+  100% {
+  	border-color: #001F3F;
+  }
+}
+
+.subpage-title {
+	font-size: 60px;
+	letter-spacing: .15em;
+	text-align: center;
+	padding: 1em;
+}
+
+.theories {
+	overflow: hidden;
+	height: 100%;
+}
+
+.theories-container {
+	height: 400px;
+	overflow: scroll;
+}
+
+.theory {
+	text-align: center;
+	font-size: 32px;	
+	padding: 25px;
+	letter-spacing: .1em;
+}
+
+.button {
+	display: inline-block;
+	border: solid 1px white;
+	padding: 5px 15px;
+	font-size: 20px;
+}
+
+.button:hover {
+	cursor: pointer;
+	background-color: rgba(144, 81, 76, 1);
+}
+
+.votes {
+	display: inline-block;
+	padding: 15px;
+}
+
+.author {
+	font-family: 
+	font-style: italic;
+	font-size: 16px;
+}
+
+.new-theory-form {
+	width: 425px;
+	height: 425px;
+	padding: 25px;
+	font-size: 32px;
+	border: solid 2px white;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.new-theory-container {
+	width: 100%;
+	height: 100%;
+}
+
+.new-theory-line {
+	margin-top: 15px;
+}
+
+.new-theory-content {
+	width: 300px;
+	height: 100px;
+}
+
+.hidden {
+	display: none;
+}
+
+.back {
+	border: none;
+	margin-top: .5em;
+}
+
+.search {
+	width: 18em;
+}
