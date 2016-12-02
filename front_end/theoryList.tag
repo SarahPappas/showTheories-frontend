@@ -1,8 +1,7 @@
 <theoryList class="theories { hidden: isHidden }">
 	<div class="subpage-title">Read or 
-		<div onclick={ changeView } class="button-main">Add</div>
-		<input ref="input" oninput={ searchTheories } placeholder="search by show" class="new-theory-line search"></input>
-		<!-- <button onchange={ searchTheories }>submit</button> -->
+		<div onclick={ _changeView } class="button-main">Add</div>
+		<input ref="input" oninput={ _updateTheories } placeholder="search by show" class="new-theory-line search"></input>
 	</div>
 	<hr>
 	<div class="theories-container">
@@ -13,13 +12,14 @@
 		this.isHidden = activeViewModel.isHidden("theoryList");
 
 		this._sortTheories = function () {
-			this.theories = _.sortBy(this.theories, function (theory) {
+			this.theories = _.sortBy(this.theories, [function (theory) {
 				return -(theory.upvotesCount + theory.downvotesCount);
-			}.bind(this));
+			}]);
 		};
 
 		this._updateTheories = function () {
 			this.theories = theoriesModel.getTheories();
+			this._filterTheories();
 			this._sortTheories();
 			this.update();
 		};
@@ -30,26 +30,27 @@
 
 		theoriesModel.on("change", function () {
 			this._updateTheories();
-			this.searchTheories();
 		}.bind(this));
 
-		this.changeView = function () {
+		this._changeView = function () {
  			activeViewModel.changeActiveView("newTheory");
 		};
 
 		activeViewModel.on("viewChange", function() {
 			this.isHidden = activeViewModel.isHidden("theoryList");
 			this.update();
-			console.log("theoryList hidden?", this.isHidden);
 		}.bind(this));
 
-		this.searchTheories = function () {
-			this.theories = theoriesModel.getTheories();
-			var input = this.refs.input.value.toLowerCase();
+		this._filterTheories = function () {
+			var inputEl = this.refs.input;
+			if (!inputEl) {
+				return;
+			}
+
+			var searchTerm = inputEl.value.toLowerCase();
 			this.theories = _.filter(this.theories, function(theory) { 
-				return _.startsWith(theory.showTitle, input);
+				return _.startsWith(theory.showTitle, searchTerm);
 			});
-			this.update();
 		}.bind(this);
 
 		this._updateTheories();

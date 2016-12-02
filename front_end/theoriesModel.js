@@ -49,9 +49,8 @@ TheoriesModel.prototype = {
 		var index = this._getTheoryIndexById(theory.id);
 		this._theories[index] = _.cloneDeep(theory);
 		this.trigger("change");
-		this._httpRequest("PUT", "http://localhost:3000/theories/"+theory.id+"/"+vote, JSON.stringify(theory))
+		this._httpRequest("PUT", "https://showtheories.herokuapp.com/theories/"+theory.id+"/"+vote, JSON.stringify(theory))
 			.then(function (response) {
-				console.log(response);
 				var errorMsg = JSON.parse(response).error;
 				if(errorMsg) {
 					this.trigger("error", errorMsg);
@@ -63,9 +62,8 @@ TheoriesModel.prototype = {
 	addTheory: function (theory) {
 		this._theories.push(_.cloneDeep(theory));
 		this.trigger("change");
-		this._httpRequest("POST", "http://localhost:3000/theories", JSON.stringify(theory))
+		this._httpRequest("POST", "https://showtheories.herokuapp.com/theories", JSON.stringify(theory))
 			.then(function (response) {
-				console.log(JSON.parse(response));
 				var errorMsg = JSON.parse(response).error;
 				if(errorMsg) {
 					this.trigger("error", errorMsg);
@@ -74,7 +72,7 @@ TheoriesModel.prototype = {
 			}.bind(this));
 	},
 	reloadTheories: function () {
-		this._httpRequest("GET", "http://localhost:3000/theories")
+		this._httpRequest("GET", "https://showtheories.herokuapp.com/theories")
 			.then(function (responseText) {
 				this._theories = JSON.parse(responseText);
 				this.trigger("change");
@@ -102,7 +100,6 @@ TheoriesModel.prototype = {
 			}.bind(this));
 	
 			request.addEventListener("error", function (err) {
-				console.log(err);
 				reject(err);
 			});
 			
