@@ -29,4 +29,20 @@
 			theoriesModel.updateTheory(theory, "downvote");
 		};
 	</script>
+
+	<style type="text/css">
+		.votes {
+			/* box */
+			display: inline-block;
+			padding: 15px;
+		}
+
+		.author {
+			/* text */
+			font-family: 
+			font-size: 16px;
+			font-style: italic;
+		}
+
+	</style>
 </theory>

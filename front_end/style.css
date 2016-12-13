@@ -36,64 +36,6 @@ body {
 	}
 }
 
-.home-container {
-	/* box */
-	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-
-	/* flex child properties */
-	justify-content: space-around;
-
-}
-
-.title {
-	/* box */
-	display: block;
-	margin-top: -15px;
-	margin-bottom: -40px;
-	padding-top: 40px;
-
-	/* text */
-	font-size: 180px;
-	text-align: center;
-}
-
-.quote {
-	/* box */
-	padding: 40px 20px;
-
-	/* text */
-	font-size: 100px;
-	font-style: italic;
-	line-height: 1.25;
-	text-align: center;
-}
-
-.quote-author {
-	/* text */
-	font-size: 24px;
-	font-style: none;
-}
-
-@media (max-width: 768px) {
-	.title {
-		/* box */
-		margin-top: -13.5px;
-		margin-bottom: -36px;
-		padding-top: 40px;
-
-		/* text */
-		font-size: 100px;
-	}
-
-	.quote {
-		/* text */
-		font-size: 70px;
-	}
-}
-
 .background {
 	/* box */
 	width: 100%;
@@ -161,32 +103,6 @@ body {
 	}
 }
 
-.theories {
-	/* box */
-	height: 100%;
-
-	/* effects */
-	overflow: hidden;
-}
-
-.theories-container {
-	/* box */
-	height: 400px;
-
-	/* effects */
-	overflow: scroll;
-}
-
-.theory {
-	/* box */
-	padding: 25px;
-
-	/* text */
-	font-size: 32px;	
-	letter-spacing: .1em;
-	text-align: center;
-}
-
 .button {
 	/* box */
 	display: inline-block;
@@ -212,72 +128,17 @@ body {
 	}
 }
 
-.votes {
+.theory {
 	/* box */
-	display: inline-block;
-	padding: 15px;
-}
-
-.author {
-	/* text */
-	font-family: 
-	font-size: 16px;
-	font-style: italic;
-}
-
-.new-theory-form {
-	/* box */
-	width: 425px;
-	height: 425px;
-	margin: 0 auto;
 	padding: 25px;
-	border: solid 2px white;
+
 	/* text */
-	font-size: 32px;
+	font-size: 32px;	
+	letter-spacing: .1em;
 	text-align: center;
-}
-
-@media (max-width: 768px) {
-	.new-theory-form {
-		/* box */
-		width: 350px;
-		height: 350px;
-		padding: 20px;
-
-		/* text */
-		font-size: 24px;
-	}
-}
-
-.new-theory-container {
-	/* box */
-	width: 100%;
-	height: 100%;
-}
-
-.new-theory-line {
-	/* box */
-	margin-top: 15px;
-}
-
-.new-theory-content {
-	/* box */
-	width: 300px;
-	height: 100px;
 }
 
 .hidden {
 	/* box */
 	display: none;
-}
-
-.back {
-	/* box */
-	margin-top: .5em;
-	border: none;
-}
-
-.search {
-	/* box */
-	width: 18em;
 }

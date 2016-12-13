@@ -82,6 +82,11 @@
 				/* text */
 				font-size: 70px;
 			}
+
+			.button-main {
+				/* text */
+				font-size: 40px;
+			}
 		}
 
 		@media (max-width: 350px) {

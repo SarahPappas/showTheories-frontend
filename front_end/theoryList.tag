@@ -55,4 +55,29 @@
 
 		this._updateTheories();
 	</script>
+
+	<style type="text/css">
+		.theories {
+			/* box */
+			height: 100%;
+
+			/* effects */
+			overflow: hidden;
+		}
+
+		.theories-container {
+			/* box */
+			height: 400px;
+
+			/* effects */
+			overflow: scroll;
+		}
+
+		.search {
+			/* box */
+			width: 18em;
+			margin-top: 15px;
+		}
+
+	</style>
 </theoryList>

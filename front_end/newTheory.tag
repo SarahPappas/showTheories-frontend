@@ -42,4 +42,54 @@
 			this.update();
 		}.bind(this));
 	</script>
+
+	<style type="text/css">
+		.new-theory-form {
+			/* box */
+			width: 425px;
+			height: 425px;
+			margin: 0 auto;
+			padding: 25px;
+			border: solid 2px white;
+			/* text */
+			font-size: 32px;
+			text-align: center;
+		}
+
+		.new-theory-container {
+			/* box */
+			width: 100%;
+			height: 100%;
+		}
+
+		.new-theory-line {
+			/* box */
+			margin-top: 15px;
+		}
+
+		.new-theory-content {
+			/* box */
+			width: 300px;
+			height: 100px;
+		}
+
+		.back {
+			/* box */
+			margin-top: .5em;
+			border: none;
+		}
+		
+		@media (max-width: 768px) {
+			.new-theory-form {
+				/* box */
+				width: 350px;
+				height: 350px;
+				padding: 20px;
+
+				/* text */
+				font-size: 24px;
+			}
+		}
+
+	</style>
 </newTheory>
