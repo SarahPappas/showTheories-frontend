@@ -2,7 +2,22 @@ function TheoriesModel() {
 	// Makes TheoriesModel an event emitter.
 	riot.observable(this);
 
-	this._theories = [];
+	this._theories = [
+		{
+			content:"Dorian will stab the painting.",
+			authorName: "Bob",
+			upvotesCount: 3,
+			downvotesCount: 4,
+			showTitle: "Penny Dreadful"
+		},
+		{
+			content:"Dorian will stab the painting.",
+			authorName: "Bob",
+			upvotesCount: 3,
+			downvotesCount: 4,
+			showTitle: "Penny Dreadful"
+		}
+	];
 
 	this.reloadTheories();
 
