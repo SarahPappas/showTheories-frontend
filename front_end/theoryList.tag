@@ -68,6 +68,8 @@
 		.theories-container {
 			/* box */
 			height: 100%;
+			box-sizing: border-box;
+			padding-top: 237px;
 
 			/* effects */
 			overflow: scroll;
@@ -94,8 +96,8 @@
 			.theories-container {
 				/* box */
 				height: 100%;
+				padding-top: 191px;
 			}
 		}
-
 	</style>
 </theoryList>

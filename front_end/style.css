@@ -82,6 +82,13 @@ body {
 .subpage-title {
 	/* box */
 	padding: 30px;
+	top: 0;
+	width: 100%;
+	box-sizing: border-box;
+
+	/* background */
+	background-color: rgb(0, 0, 0);
+	position: fixed;
 
 	/* text */
 	font-size: 60px;
