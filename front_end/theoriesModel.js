@@ -8,14 +8,14 @@ function TheoriesModel() {
 			authorName: "Bob",
 			upvotesCount: 3,
 			downvotesCount: 4,
-			showTitle: "Penny Dreadful"
+			showTitle: "penny dreadful"
 		},
 		{
 			content:"Dorian will stab the painting.",
 			authorName: "Bob",
 			upvotesCount: 3,
 			downvotesCount: 4,
-			showTitle: "Penny Dreadful"
+			showTitle: "penny dreadful"
 		}
 	];
 

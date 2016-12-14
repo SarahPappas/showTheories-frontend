@@ -39,7 +39,6 @@
 
 		.author {
 			/* text */
-			font-family: 
 			font-size: 16px;
 			font-style: italic;
 		}

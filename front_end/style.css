@@ -25,6 +25,7 @@ body {
 	font-family: OstrichSansLight, arial;
 	font-size: 24px;
 
+	background-color: rgba(0, 0, 0, 1);
 	/* effects */
 	overflow: hidden;
 
@@ -34,15 +35,6 @@ body {
 	body {
 		font-family: OstrichSansRegular, arial;
 	}
-}
-
-.background {
-	/* box */
-	width: 100%;
-	height: 100%;
-
-	/* background */
-	background-color: rgba(0, 0, 0, 1);
 }
 
 .button-main {

@@ -82,14 +82,9 @@
 				/* text */
 				font-size: 70px;
 			}
-
-			.button-main {
-				/* text */
-				font-size: 40px;
-			}
 		}
 
-		@media (max-width: 350px) {
+		@media (max-width: 414px) {
 			.title {
 				/* box */
 				margin-top: -6.75px;

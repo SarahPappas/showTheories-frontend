@@ -75,8 +75,25 @@
 
 		.search {
 			/* box */
-			width: 18em;
+			width: 200px;
 			margin-top: 15px;
+			padding: 4px;
+
+			/* text */
+			font-size: 32px;
+			font-family: OstrichSansLight, arial;
+		}
+
+		@media (max-width: 768px) {
+			.search {
+				/* text */
+				font-family: OstrichSansRegular, arial;
+			}
+
+			.theories-container {
+				/* box */
+				height: 100%;
+			}
 		}
 
 	</style>
