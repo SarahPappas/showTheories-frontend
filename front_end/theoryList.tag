@@ -67,7 +67,7 @@
 
 		.theories-container {
 			/* box */
-			height: 400px;
+			height: 100%;
 
 			/* effects */
 			overflow: scroll;
@@ -78,6 +78,7 @@
 			width: 200px;
 			margin-top: 15px;
 			padding: 4px;
+			border-radius: 0;
 
 			/* text */
 			font-size: 32px;

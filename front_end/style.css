@@ -25,10 +25,11 @@ body {
 	font-family: OstrichSansLight, arial;
 	font-size: 24px;
 
+	/* background */
 	background-color: rgba(0, 0, 0, 1);
+	
 	/* effects */
 	overflow: hidden;
-
 }
 
 @media (max-width: 768px) {
@@ -80,7 +81,7 @@ body {
 
 .subpage-title {
 	/* box */
-	padding: 1em;
+	padding: 30px;
 
 	/* text */
 	font-size: 60px;
@@ -90,6 +91,9 @@ body {
 
 @media (max-width: 768px) {
 	.subpage-title {
+		/* box */
+		padding: 20px;
+
 		/* text */
 		font-size: 40px;
 	}
