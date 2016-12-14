@@ -60,6 +60,7 @@
 			/* box */
 			width: 100%;
 			height: 100%;
+			padding: 4px;
 		}
 
 		.new-theory-line {
@@ -71,6 +72,10 @@
 			/* box */
 			width: 300px;
 			height: 100px;
+			border-radius: 1;
+			
+			/* text */
+			font-size: 24px;
 		}
 
 		.back {
@@ -78,16 +83,33 @@
 			margin-top: .5em;
 			border: none;
 		}
+
+		input {
+			/* box */
+			border-radius: 1;
+
+			/* text */
+			font-size: 24px;
+		}
 		
 		@media (max-width: 768px) {
 			.new-theory-form {
 				/* box */
 				width: 350px;
-				height: 350px;
+				height: 400px;
 				padding: 20px;
 
-				/* text */
-				font-size: 24px;
+			}
+
+			.new-theory-content {
+				width: 200px;
+			}
+		}
+
+		@media (max-width: 414px) {
+			.new-theory-form {
+				width: 250px;
+				padding: 10px;
 			}
 		}
 

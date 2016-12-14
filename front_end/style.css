@@ -12,6 +12,7 @@
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
+	font-family: OstrichSansLight, arial;
 }
 
 body {
@@ -30,12 +31,6 @@ body {
 	
 	/* effects */
 	overflow: hidden;
-}
-
-@media (max-width: 768px) {
-	body {
-		font-family: OstrichSansRegular, arial;
-	}
 }
 
 .button-main {
@@ -72,13 +67,6 @@ body {
   }
 }
 
-@media (max-width: 768px) {
-	.button-main {
-		/* text */
-		font-size: 40px;
-	}
-}
-
 .subpage-title {
 	/* box */
 	padding: 30px;
@@ -90,16 +78,6 @@ body {
 	font-size: 60px;
 	letter-spacing: .15em;
 	text-align: center;
-}
-
-@media (max-width: 768px) {
-	.subpage-title {
-		/* box */
-		padding: 20px;
-
-		/* text */
-		font-size: 40px;
-	}
 }
 
 .button {
@@ -120,13 +98,6 @@ body {
 	cursor: pointer;
 }
 
-@media (max-width: 768px) {
-	.button {	
-		/* text */
-		font-size: 14px;
-	}
-}
-
 .theory {
 	/* box */
 	padding: 25px;
@@ -140,4 +111,28 @@ body {
 .hidden {
 	/* box */
 	display: none;
+}
+
+@media (max-width: 768px) {
+	* {
+		font-family: OstrichSansRegular, arial;
+	}
+
+	.subpage-title {
+		/* box */
+		padding: 20px;
+
+		/* text */
+		font-size: 40px;
+	}
+
+	.button-main {
+		/* text */
+		font-size: 40px;
+	}
+
+	.button {	
+		/* text */
+		font-size: 14px;
+	}
 }
