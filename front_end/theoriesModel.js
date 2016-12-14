@@ -25,11 +25,11 @@ function TheoriesModel() {
 			showTitle: "penny dreadful"
 		},
 		{
-			content:"Dorian will stab the painting.",
+			content:"aliens will attack",
 			authorName: "Bob",
 			upvotesCount: 3,
 			downvotesCount: 4,
-			showTitle: "penny dreadful"
+			showTitle: "MIB"
 		}
 	];
 

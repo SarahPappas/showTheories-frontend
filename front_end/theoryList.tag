@@ -5,7 +5,9 @@
 	</div>
 	<hr>
 	<div class="theories-container">
-		<theory each={ theories } data={ this }></theory>
+		<div class="theories-container-scroll">
+			<theory each={ theories } data={ this }></theory>
+		</div>
 	</div>
 
 	<script type="text/javascript">
@@ -65,11 +67,12 @@
 			overflow: hidden;
 		}
 
-		.theories-container {
+		.theories-container-scroll {
 			/* box */
-			height: 100%;
-			box-sizing: border-box;
-			padding-top: 237px;
+			height: 70%;
+
+			/* background*/
+			position: relative;
 
 			/* effects */
 			overflow: scroll;
@@ -91,12 +94,6 @@
 			.search {
 				/* text */
 				font-family: OstrichSansRegular, arial;
-			}
-
-			.theories-container {
-				/* box */
-				height: 100%;
-				padding-top: 191px;
 			}
 		}
 	</style>
