@@ -47,6 +47,7 @@
 			margin-bottom: -.3em;
 
 			/* text */
+			font-family: OstrichSansDashed, arial;
 			font-size: 180px;
 			text-align: center;
 		}
@@ -83,6 +84,7 @@
 		@media (max-width: 768px) {
 			.title {
 				/* text */
+				font-family: OstrichSansRegular, arial;
 				font-size: 100px;
 			}
 

@@ -96,7 +96,7 @@
 
 			/* text */
 			font-size: 30px;
-			font-family: OstrichSansLight, arial;
+			font-family: OstrichSansRegular, arial;
 		}
 
 		@media (max-width: 768px) {

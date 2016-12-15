@@ -66,7 +66,6 @@
 			/* box */
 			width: 80px;
 			padding-top: .4em;
-			text-indent: .17em;
 		}
 
 		@media (max-width: 768px) {
@@ -77,12 +76,18 @@
 			.upvotes-row {
 				display: flex;
 				justify-content: center;
+				flex: 0 0;
+			}
+
+			.votes {
+				min-width: 50px;
 			}
 
 			.downvotes-row {
 				display: flex;
 				flex-direction: row-reverse;
 				justify-content: center;
+				flex: 0 0;
 			}
 		}
 

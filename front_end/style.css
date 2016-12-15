@@ -1,18 +1,18 @@
 @font-face {
-	font-family: OstrichSansLight;
-	src: url(/fonts/ostrich-sans-light.woff) format('woff');
+	font-family: OstrichSansRegular;
+	src: url(/fonts/ostrich-sans-regular.woff) format('woff');
 }
 
 @font-face {
-	font-family: OstrichSansRegular;
-	src: url(/fonts/ostrich-sans-regular.woff) format('woff');
+	font-family: OstrichSansDashed;
+	src: url(/fonts/ostrich-sans-dashed.woff) format('woff');
 }
 
 *  {
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
-	font-family: OstrichSansLight, arial;
+	font-family: OstrichSansRegular, arial;
 }
 
 body {
@@ -22,8 +22,8 @@ body {
 	margin: 0;
 
 	/* text */
-	color: white;
-	font-family: OstrichSansLight, arial;
+	color: #faebd7;
+	font-family: OstrichSansRegular, arial;
 	font-size: 24px;
 
 	/* background */
