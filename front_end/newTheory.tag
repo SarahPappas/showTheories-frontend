@@ -2,7 +2,7 @@
 	<div class="subpage-title">Add your latest theory</div>
 	<form class="new-theory-form">
 		<div>
-			<div class="new-theory-line">What show?</div>
+			<div>What show?</div>
 			<input type="text" ref="showTitle">
 		</div>
 		<div>
@@ -14,7 +14,9 @@
 			<input type="text" ref="authorName">
 		</div>
 		<div class="button-main new-theory-line" onclick={ add }>Add</div>
-		<div class="button back" onclick={ changeView }>back</div>
+		<div class="new-theory-line">
+			<div class="button" onclick={ changeView }>back</div>
+		</div>
 	</form>
 
 
@@ -47,7 +49,7 @@
 		.new-theory-form {
 			/* box */
 			width: 425px;
-			height: 425px;
+			/*height: 425px;*/
 			margin: 0 auto;
 			padding: 25px;
 			border: solid 2px white;
@@ -78,12 +80,6 @@
 			font-size: 24px;
 		}
 
-		.back {
-			/* box */
-			margin-top: .5em;
-			border: none;
-		}
-
 		input {
 			/* box */
 			border-radius: 1;
@@ -96,7 +92,7 @@
 			.new-theory-form {
 				/* box */
 				width: 350px;
-				height: 400px;
+				/*height: 400px;*/
 				padding: 20px;
 
 			}
