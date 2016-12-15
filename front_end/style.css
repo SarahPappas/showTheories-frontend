@@ -28,24 +28,25 @@ body {
 
 	/* background */
 	background-color: rgba(0, 0, 0, 1);
-	
+
 	/* effects */
 	overflow: hidden;
 }
 
 .button-main {
 	/* box */
-	width: 3em;
+	display: inline-block;
 	margin: 0 auto;
-	padding: .15em;
-	padding-top: .25em;
-	padding-left: .20em;
+	padding: 8px;
+	padding-top: 14px;
 	border: dotted white 2px;
 
 	/* text */
 	font-size: 60px;
 	letter-spacing: .15em;
 	text-align: center;
+	/* use text-indet to make up for extra letter spacing at the end of the last letter */
+	text-indent: .18em;
 
 	/* effects */
 	animation: pulse 10s infinite;
@@ -69,8 +70,7 @@ body {
 
 .subpage-title {
 	/* box */
-	padding: 30px;
-	top: 0;
+	padding: 20px;
 	width: 100%;
 	box-sizing: border-box;
 
@@ -100,10 +100,11 @@ body {
 
 .theory {
 	/* box */
-	padding: 25px;
+	padding: 20px;
+	border-bottom: solid 1px white;
 
 	/* text */
-	font-size: 32px;	
+	font-size: 30px;	
 	letter-spacing: .1em;
 	text-align: center;
 }

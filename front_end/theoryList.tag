@@ -1,11 +1,11 @@
-<theoryList class="theories { hidden: isHidden }">
-	<div class="subpage-title">Read or 
-		<div onclick={ _changeView } class="button-main">Add</div>
-		<input ref="input" oninput={ _updateTheories } placeholder="search by show" class="new-theory-line search"></input>
-	</div>
-	<hr>
-	<div class="theories-container">
-		<div class="theories-container-scroll">
+<theoryList class="{ hidden: isHidden }">
+	<div class="theories">
+		<div class="subpage-title">Read or 
+			<div onclick={ _changeView } class="button-main">Add</div>
+			<input ref="input" oninput={ _updateTheories } placeholder="search by show" class="new-theory-line search"></input>
+		</div>
+		<hr>
+		<div class="theories-container">
 			<theory each={ theories } data={ this }></theory>
 		</div>
 	</div>
@@ -62,17 +62,23 @@
 		.theories {
 			/* box */
 			height: 100%;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
 
 			/* effects */
 			overflow: hidden;
 		}
 
-		.theories-container-scroll {
-			/* box */
-			height: 70%;
+		.theories .subpage-title {
+			flex-grow: 0;
+			flex-shrink: 0;
+		}
 
-			/* background*/
-			position: relative;
+		.theories-container {
+			/* box */
+			flex-grow: 1;
+			flex-shrink: 1;
 
 			/* effects */
 			overflow: scroll;
@@ -81,12 +87,15 @@
 		.search {
 			/* box */
 			width: 200px;
-			margin-top: 15px;
-			padding: 4px;
 			border-radius: 0;
+			display: block;
+			margin: 0 auto;
+			margin-top: 20px;
+			padding: 4px;
+			padding-top: 8px;
 
 			/* text */
-			font-size: 32px;
+			font-size: 30px;
 			font-family: OstrichSansLight, arial;
 		}
 

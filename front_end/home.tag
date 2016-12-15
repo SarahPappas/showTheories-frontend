@@ -9,7 +9,9 @@
 				- Peter Drucker
 			</div>
 		</div>
-		<div onclick={ changeView } class="button-main">Peruse</div>
+		<div class="flex-child">
+			<div onclick={ changeView } class="button-main">Peruse</div>
+		</div>
 	</div>
 
 	<script type="text/javascript">
@@ -34,16 +36,15 @@
 			flex-direction: column;
 
 			/* flex child properties */
-			justify-content: space-around;
+			justify-content: space-between;
 
 		}
 
 		.title {
 			/* box */
 			display: block;
-			margin-top: -15px;
-			margin-bottom: -40px;
-			padding-top: 40px;
+			margin-top: 40px;
+			margin-bottom: -.3em;
 
 			/* text */
 			font-size: 180px;
@@ -52,7 +53,7 @@
 
 		.quote {
 			/* box */
-			padding: 40px 20px;
+			padding: 0 20px;
 
 			/* text */
 			font-size: 100px;
@@ -67,13 +68,20 @@
 			font-style: none;
 		}
 
+		.flex-child {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-shrink: 0;
+		}
+
+		.home-container .button-main {
+			margin-bottom: 40px;
+			display: inline-block;
+		}
+
 		@media (max-width: 768px) {
 			.title {
-				/* box */
-				margin-top: -13.5px;
-				margin-bottom: -36px;
-				padding-top: 40px;
-
 				/* text */
 				font-size: 100px;
 			}
@@ -86,18 +94,13 @@
 
 		@media (max-width: 414px) {
 			.title {
-				/* box */
-				margin-top: -6.75px;
-				margin-bottom: -18px;
-				padding-top: 20px;
-
 				/* text */
 				font-size: 70px;
 			}
 
 			.quote {
 				/* text */
-				font-size: 50px;
+				font-size: 40px;
 			}
 		}
 	</style>
